@@ -9,10 +9,19 @@
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.0/css/tachyons.min.css"/>
     <style>
       .blink {
+          -webkit-animation: blink .01s ease infinite;
+          -moz-animation: blink .01s ease infinite;
+          -ms-animation: blink .01s ease infinite;
           animation: blink .01s ease infinite;
         }
       
       @keyframes blink {  
+        50% { opacity: 0; }
+      }
+      -webkit-@keyframes blink {  
+        50% { opacity: 0; }
+      }
+      -moz-@keyframes blink {  
         50% { opacity: 0; }
       }
     </style>
