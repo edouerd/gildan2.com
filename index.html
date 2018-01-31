@@ -27,12 +27,14 @@
       .bg-gildan {
         background-color: #231e1e; 
       }
+      .zfront {z-index: 99;}
+      .zback {z-index: -99;}
     </style>
   </head>
   
   <body class="bg-gildan">
-        <div class="vh-100 mh7-ns mh0" style="background:url(photo.jpg) no-repeat center;"></div>
-        <div class="vh-100 mh7-ns mh0 blink" style="background:url(logo2.svg) no-repeat center;"></div>
+        <div class="vh-80 mh7-ns mh0 zback" style="background:url(photo.jpg) no-repeat center;"></div>
+        <div class="vh-100 mh7-ns mh0 zfront blink" style="background:url(logo2.svg) no-repeat center;"></div>
   </body>
   
 </html>
